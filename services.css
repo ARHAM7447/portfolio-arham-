@@ -1,0 +1,231 @@
+@import url('base.css');
+
+/* Hero Image */
+.hero-image {
+    filter: brightness(0.7) contrast(1.1);
+}
+
+/* Services Section */
+.services-section {
+    background: var(--surface-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.service-card {
+    background: var(--bg-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.service-card:hover::before {
+    opacity: 0.1;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--glow-shadow);
+}
+
+.service-card .icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    transition: var(--transition);
+}
+
+.service-card:hover .icon {
+    transform: scale(1.1);
+}
+
+.service-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    z-index: 1;
+    position: relative;
+}
+
+.service-card p {
+    color: var(--text-light);
+    z-index: 1;
+    position: relative;
+    margin-bottom: var(--spacing-md);
+}
+
+.service-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    transition: var(--transition);
+}
+
+.service-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- General Styling --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* --- Services Section Styling --- */
+.services-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Responsive Services Grid --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* --- Service Card Styling --- */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: left;
+  border: 1px solid #eef2f5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  display: inline-block;
+  background-color: hsla(var(--hue, 210), 100%, 95%, 1); /* Fallback */
+  background-color: color-mix(in srgb, var(--icon-color) 15%, transparent);
+  border-radius: 50%;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.service-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--icon-color, #007bff);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-link i {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-link {
+  color: var(--icon-color, #0056b3);
+}
+
+.service-card:hover .service-link i {
+  transform: translateX(5px);
+}
+
+/* --- Scroll Animation --- */
+.slide-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* --- Media Queries for Responsiveness --- */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .services-section {
+    padding: 60px 0;
+  }
+}

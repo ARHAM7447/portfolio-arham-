@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio projects by Arham Khan - UI/UX Designer.">
+    <title>Portfolio - Arham Khan</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="light-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="Arham Khan Home">
+                    <i class="fas fa-palette"></i> Arham Khan
+                </a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="mobile-menu" aria-label="Toggle mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Side Menu -->
+    <nav id="side-menu" class="side-menu" aria-label="Mobile navigation">
+        <button id="close-side-menu" class="close-btn" aria-label="Close mobile menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="side-menu-list">
+            <li><a href="index.html" class="side-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" class="side-link"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="services.html" class="side-link"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="portfolio.html" class="side-link active"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+           
+            <li><a href="contact.html" class="side-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Portfolio hero section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Portfolio</h1>
+            <p class="fade-in delay-1">Explore my recent projects</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Excited to share my contribution to AI Nexus, a platform leveraging AI and cloud computing to drive innovation. #AINexus #ArtificialIntelligence #CloudComputing"</p>
+                    <p class="testimonial-meta">LinkedIn Post - September 15, 2025</p>
+                    <a href="https://www.linkedin.com/posts/arham-khan-356554294_ainexus-artificialintelligence-cloudcomputing-activity-7373402211030249472-M9vY" class="testimonial-link">View Post</a>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Proud to showcase my work on sentiment analysis using Amazon SageMaker. Collaborative project that pushed the boundaries of AI! #SentimentAnalysis #AmazonSageMaker #Collaboration"</p>
+                    <p class="testimonial-meta">LinkedIn Post - September 15, 2025</p>
+                    <a href="https://www.linkedin.com/posts/arham-khan-356554294_sentimentanalysis-amazonsagemaker-collaboration-activity-7281216148510056448-2pg3" class="testimonial-link">View Post</a>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Thrilled to share my first-semester project, a step towards building impactful solutions! #Project #FirstSemester"</p>
+                    <p class="testimonial-meta">LinkedIn Post - September 16, 2025</p>
+                    <a href="https://www.linkedin.com/posts/arham-khan-356554294_thrilled-to-share-my-first-semester-project-activity-7256275353482993665-eKfQ" class="testimonial-link">View Post</a>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Developed a fitness and meditation web app, combining web development with user wellness. #WebDevelopment #FitnessApp #Meditation"</p>
+                    <p class="testimonial-meta">LinkedIn Post - September 16, 2025</p>
+                    <a href="https://www.linkedin.com/posts/arham-khan-356554294_webdevelopment-fitnessapp-meditation-activity-7256259938715369472-Wmg7" class="testimonial-link">View Post</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">A selection of my work. Feel free to explore.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image-wrapper" onclick="openModal(this)">
+                        <img src="https://i.ibb.co/27VGWwMZ/Whats-App-Image-2025-09-15-at-10-51-33-PM-6.jpg" alt="AI Nexus Project">
+                        <div class="project-overlay">
+                            <h3>Resume Phrasing Auto Form Filling</h3>
+                            <a href="#" class="btn-view-project" onclick="event.preventDefault(); alert('Redirecting to project details...');">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h4>Resume Phrasing Auto Form Filling</h4>
+                        <p>Contributed to a project focused on automating the resume filling process using advanced AI techniques.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image-wrapper" onclick="openModal(this)">
+                        <img src="https://i.ibb.co/3mwZwwmJ/Whats-App-Image-2025-09-15-at-10-51-33-PM-5.jpg" alt="Sentiment Analysis Project">
+                        <div class="project-overlay">
+                            <h3>Named Entity Recognition (NER) App</h3>
+                            <a href="#" class="btn-view-project" onclick="event.preventDefault(); alert('Redirecting to project details...');">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h4>Named Entity Recognition (NER) App</h4>
+                        <p>Developed a Named Entity Recognition (NER) application using state-of-the-art NLP techniques to identify and classify key information in text.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image-wrapper" onclick="openModal(this)">
+                        <img src="https://i.ibb.co/fGX9wjCN/Whats-App-Image-2025-09-15-at-10-51-33-PM-4.jpg" alt="First Semester Project">
+                        <div class="project-overlay">
+                            <h3>Thread Guard</h3>
+                            <a href="#" class="btn-view-project" onclick="event.preventDefault(); alert('Redirecting to project details...');">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h4>Thread Guard</h4>
+                        <p>A project aimed at enhancing thread safety in concurrent programming environments.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image-wrapper" onclick="openModal(this)">
+                        <img src="https://i.ibb.co/pjNP73mC/Whats-App-Image-2025-09-15-at-10-51-33-PM-3.jpg" alt="Fitness App Project">
+                        <div class="project-overlay">
+                            <h3>AI Voice</h3>
+                            <a href="#" class="btn-view-project" onclick="event.preventDefault(); alert('Redirecting to project details...');">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h4>AI Voice</h4>
+                        <p>Developed an AI-powered voice assistant application, enhancing user interaction through natural language processing.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image-wrapper" onclick="openModal(this)">
+                        <img src="https://i.ibb.co/mVW17pH8/Whats-App-Image-2025-09-15-at-10-51-33-PM-2.jpg" alt="Innovative Web Solution">
+                        <div class="project-overlay">
+                            <h3>Chatbot </h3>
+                            <a href="#" class="btn-view-project" onclick="event.preventDefault(); alert('Redirecting to project details...');">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h4>Chatbot </h4>
+                        <p>Developed a chatbot application capable of engaging users in natural language conversations, providing information and assistance on various topics.</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image-wrapper" onclick="openModal(this)">
+                        <img src="https://i.ibb.co/KpGSLHCK/Whats-App-Image-2025-09-15-at-10-51-33-PM-1.jpg" alt="AI Integration Project">
+                        <div class="project-overlay">
+                            <h3>MCQ Generator</h3>
+                            <a href="#" class="btn-view-project" onclick="event.preventDefault(); alert('Redirecting to project details...');">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h4>MCQ Generator</h4>
+                        <p>Developed a multiple-choice question generator application, showcasing expertise in machine learning and software engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+  <!-- Certificates Section (Place this where you want certificates to appear, e.g. after Projects Section) -->
+<section class="certificates-section section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title fade-in">My Certificates</h2>
+      <p class="section-subtitle fade-in delay-1">
+        A showcase of my professional achievements and skills acquired through dedicated learning.
+      </p>
+    </div>
+    <div class="certificates-grid">
+      <div class="certificate-card fade-in">
+        <div class="certificate-logo">
+          <i class="fab fa-udemy"></i>
+        </div>
+        <h3>Udemy Python Completed</h3>
+        <p>
+          Completed a comprehensive Python programming course covering basics to advanced topics.
+        </p>
+        <a href="https://www.udemy.com/certificate/UC-ca4f7276-518d-4910-9282-68b218f6a261/"
+           target="_blank" class="certificate-link">View Certificate</a>
+      </div>
+
+      <div class="certificate-card fade-in">
+        <div class="certificate-logo">
+          <i class="fab fa-udemy"></i>
+        </div>
+        <h3>Udemy Digital Marketing</h3>
+        <p>
+          Advanced skills in digital marketing strategies, including SEO, content marketing, and social media management.
+        </p>
+        <a href="https://www.udemy.com/certificate/UC-545721dd-e642-4cb4-91bb-09d5daabe2e7/"
+           target="_blank" class="certificate-link">View Certificate</a>
+      </div>
+
+      <div class="certificate-card fade-in">
+        <div class="certificate-logo">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>Simplilearn SkillUp Certificate</h3>
+        <p>
+          Completed a SkillUp course by Simplilearn, focusing on practical IT and software development skills.
+        </p>
+        <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxOTExIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNzI5NjExMV8xNzIzNzA4MTI4LnBuZyIsInVzZXJuYW1lIjoiYXJoYW4ga2hhbiJ9"
+           target="_blank" class="certificate-link">View Certificate</a>
+      </div>
+
+      <div class="certificate-card fade-in">
+        <div class="certificate-logo">
+          <i class="fab fa-udemy"></i>
+        </div>
+        <h3>Udemy AWS Cloud Practitioner</h3>
+        <p>
+          Learned key concepts related to AWS services, cloud computing, and best practices.
+        </p>
+        <a href="https://www.udemy.com/certificate/UC-68f0b5ce-1014-4c31-8711-701054c74822/"
+           target="_blank" class="certificate-link">View Certificate</a>
+      </div>
+
+      <div class="certificate-card fade-in">
+        <div class="certificate-logo">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3>LIFE Global Certification</h3>
+        <p>
+          Achieved certification from LIFE Global, demonstrating expertise in leadership and professional skills.
+        </p>
+        <a href="https://www.life-global.org/certificate/44c54167-7768-49e4-8c1f-8658de61bc84"
+           target="_blank" class="certificate-link">View Certificate</a>
+      </div>
+
+      <div class="certificate-card fade-in">
+        <div class="certificate-logo">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3>MS Office</h3>
+        <p>
+          MS Office certification
+        </p>
+        <a href="https://www.linkedin.com/posts/arham-khan-356554294_growth-learning-milestones-activity-7264680407508353025-gbPr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdFrfIBmYx7cBogmwMHduElzdZnIhSv97U"
+           target="_blank" class="certificate-link">View Certificate</a>
+      </div>
+      <!-- Add more .certificate-card as needed -->
+    </div>
+  </div>
+</section> 
+    <!-- End Certificates Section -->
+ <!-- this is the section of my ppt for marketing  -->
+  <!-- Add this section after your Certificates Section, before the modal and scroll-to-top button -->
+
+<section class="showcase-section section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title fade-in">My PPT Showcases</h2>
+      <p class="section-subtitle fade-in delay-1">
+        These are the presentations—they show my creativity and the use of AI tools.
+      </p>
+    </div>
+    <div class="showcase-grid">
+      <div class="showcase-card fade-in">
+        <div class="showcase-logo">
+          <i class="fas fa-file-powerpoint"></i>
+        </div>
+        <h3>Skeleton Marketing Brief PPT </h3>
+        <a href="https://www.canva.com/design/DAGud7Z-ohc/lk3LxznAJgKMUlLg7MzMNA/edit?utm_content=DAGud7Z-ohc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+           target="_blank" class="showcase-link">View PPT</a>
+      </div>
+      <div class="showcase-card fade-in">
+        <div class="showcase-logo">
+          <i class="fas fa-file-powerpoint"></i>
+        </div>
+        <h3>Video of nebula interactive campaign</h3>
+        <a href="https://www.canva.com/design/DAGxoAKrX6s/7Gyb2OctLUeYv55Egwcrag/edit?utm_content=DAGxoAKrX6s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+           target="_blank" class="showcase-link">View PPT</a>
+      </div>
+      <div class="showcase-card fade-in">
+        <div class="showcase-logo">
+          <i class="fas fa-file-powerpoint"></i>
+        </div>
+        <h3>Lab manual task for analyze customer data</h3>
+        <a href="https://www.canva.com/design/DAGwypgykdQ/R9tJspr2SpdMTwGzdplt9w/edit?utm_content=DAGwypgykdQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+           target="_blank" class="showcase-link">View PPT</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2025 Arham Khan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script>
+        // Animation for fade-in effect
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(element => observer.observe(element));
+        });
+
+        function openModal(element) {
+            var imgSrc = element.querySelector('img').src;
+            var modal = document.getElementById('project-modal');
+            var modalBody = modal.querySelector('.modal-body');
+            modalBody.innerHTML = '<img src="' + imgSrc + '" alt="Project Image">';
+            modal.classList.add('show');
+            modal.style.display = 'flex';
+        }
+
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            var modal = document.getElementById('project-modal');
+            modal.style.display = 'none';
+            modal.classList.remove('show');
+        });
+
+        window.addEventListener('click', function(event) {
+            var modal = document.getElementById('project-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                modal.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

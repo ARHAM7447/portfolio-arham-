@@ -1,0 +1,109 @@
+@import url('base.css');
+
+/* Hero Specific */
+.hero-video {
+    filter: brightness(0.6) contrast(1.1);
+}
+
+/* Parallax Effect */
+.hero {
+    background-attachment: fixed;
+}
+
+/* Photo Frame Section */
+.photo-frame-section {
+    background: var(--surface-color);
+    padding: var(--spacing-xl) 0;
+}
+
+.photo-frame {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--bg-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.frame-container {
+    flex: 0 0 auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    /* Square frame - removed circular radius */
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 0 10px rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.frame-container:hover {
+    transform: scale(1.05);
+    box-shadow: var(--glow-shadow);
+}
+
+.profile-image {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    /* Square image - removed circular border */
+    border-radius: 0;
+    border: 4px solid var(--primary-color);
+}
+
+.photo-caption {
+    flex: 1;
+}
+
+.photo-caption h2 {
+    font-size: var(--font-size-xxl);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.photo-caption p {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .photo-frame {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .frame-container {
+        width: 200px;
+        height: 250px;
+    }
+
+    .photo-caption h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .photo-caption p {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .frame-container {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+.photo-frame {
+    padding: var(--spacing-md);
+}
+
+.photo-caption h2 {
+    font-size: var(--font-size-lg);
+}

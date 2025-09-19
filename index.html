@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Arham Khan, a professional UI/UX Designer.">
+    <title>Arham Khan </title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" aria-label="Arham Khan Home">
+                    <i class="fas fa-palette"></i> Arham Khan
+                </a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="mobile-menu" aria-label="Toggle mobile menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Side Menu -->
+    <nav id="side-menu" class="side-menu" aria-label="Mobile navigation">
+        <button id="close-side-menu" class="close-btn" aria-label="Close mobile menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="side-menu-list">
+            <li><a href="index.html" class="side-link active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" class="side-link"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="services.html" class="side-link"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="portfolio.html" class="side-link"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="contact.html" class="side-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero section">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Arham Khan</h1>
+            <p class="fade-in delay-1">Turning ideas into impactful realities</p>
+            <a href="portfolio.html" class="cta-button fade-in delay-2">
+                <i class="fas fa-arrow-right"></i> View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- Photo Frame Section -->
+    <section class="section photo-frame-section" aria-label="Personal photo">
+        <div class="container">
+            <div class="photo-frame slide-in">
+                <div class="frame-container">
+                   <!-- Profile Image Section -->
+  <img 
+    src="portfolio.png" 
+    alt="Arham Khan, UI/UX Designer" 
+    class="profile-image" 
+    loading="lazy" 
+  />
+</a>
+
+</div>
+<div class="photo-caption">
+    <h2>Meet Arham Khan</h2>
+    <p>
+  I’m Arham Khan from Bhopal, Madhya Pradesh, currently pursuing a BCA in Cloud Computing at 
+  <a href="https://sageuniversity.edu.in/" target="_blank" rel="noopener noreferrer">Sage University</a>.  
+  I have strong knowledge of coding, Linux, cloud computing (AWS), computer networking, and operating systems.  
+  I’m passionate about exploring AI tools and have gained hands-on experience with many of them throughout my journey.  
+  My career aspirations are focused on digital marketing, marketing, and sales, and I’m also eager to expand my opportunities as a freelancer.  
+</p>
+
+    <a href="about.html" class="cta-button">Learn More About Me</a>
+</div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2025 Arham Khan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
